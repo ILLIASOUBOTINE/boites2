@@ -1,0 +1,47 @@
+
+main {
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* min-height: 200px; */
+
+}
+
+.boit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-shrink:2; */
+  /* height: 40%; */
+    /* min-height: 50px; */
+    margin: 5px ;
+  background: rgb(207,226,243);  
+  border: solid 1px rgb(139, 128, 128);
+}
+
+@media screen and ( max-width:375px) {
+
+
+    .boit:nth-child(even) {
+        display: none;
+    }
+
+    main {
+        
+        justify-content: flex-start;
+    }
+}
+
+@media screen and ( min-width:768px) {
+  
+
+    .boit:nth-child(odd) {
+        display: none;
+    }
+
+    main {
+        
+        justify-content: flex-start;
+    }
+}
